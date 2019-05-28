@@ -1,0 +1,28 @@
+AllCops:
+  # Exclude auto-generated files by Rails
+  Exclude:
+    - 'db/schema.rb'
+    - 'node_modules/**/*'
+    - 'vendor/bundle/**/*'
+
+# ABC size 20 is pretty well-done actually.
+# For a reference, RuboCop itself configures this value as 17.
+Metrics/AbcSize:
+  Max: 20
+
+# LineLength 80 comes from restrictions in good old days.
+Metrics/LineLength:
+  Max: 160
+
+# Double negation is a famous Ruby idiom,
+# why not using it with confidence?
+Style/DoubleNegation:
+  Enabled: false
+
+# No particular reason to prefer array style,
+# two different styles suit in different situations.
+Style/SymbolArray:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
