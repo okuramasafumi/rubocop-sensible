@@ -2,6 +2,36 @@
 
 Sensible default for RuboCop.
 
+## Purpose
+
+The purpose of this tiny gem is to be useless at all.
+
+No, seriously. This gem adds serveral congigurations for RuboCop that I think are sensible and that's it. If RuboCop's default will be changed in the future, it's useless anymore.
+
+## What it does
+
+It overrides the following configurations.
+
+### Metrics/AbcSize
+
+It increases the default value to `20`. It can be lower, but 20 seems pretty reasonable from my experience. Send a Pull Request if you have a different opinion.
+
+### Metrics/LineLength
+
+It can be disabled at all, but for now it's `160`. `160` comes from my experience that code which is longer than 160 characters tends to have some problem.
+
+### Style/AsciiComments
+
+When the team is not international, we'd like to write comments in our own language.
+
+### Style/DoubleNegation
+
+Double negation is used so widely that it doesn't make sense to disable it by default.
+
+### Style/SymbolArray, Style/WordArray
+
+This is a little controversial but using styles like `[:create, :edit]` makes sense.
+
 ## Installation
 
 Add this line to your application's Gemfile:
