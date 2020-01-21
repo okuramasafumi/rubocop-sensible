@@ -1,4 +1,6 @@
-require "rubocop/sensible/version"
+# frozen_string_literal: true
+
+require 'rubocop/sensible/version'
 
 module Rubocop
   module Sensible
