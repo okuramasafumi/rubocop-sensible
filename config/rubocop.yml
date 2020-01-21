@@ -5,14 +5,14 @@ AllCops:
     - 'node_modules/**/*'
     - 'vendor/bundle/**/*'
 
+# LineLength 80 comes from restrictions in good old days.
+Layout/LineLength:
+  Max: 160
+
 # ABC size 20 is pretty well-done actually.
 # For a reference, RuboCop itself configures this value as 17.
 Metrics/AbcSize:
   Max: 20
-
-# LineLength 80 comes from restrictions in good old days.
-Metrics/LineLength:
-  Max: 160
 
 # If all member of the team is Japanese, writing comments in Japanese
 # makes sense.
